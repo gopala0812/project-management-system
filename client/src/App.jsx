@@ -136,14 +136,30 @@ function AuthPage({ mode, navigate, onAuth }) {
   return (
   <main className="auth-shell">
     <section className="auth-card">
-      <div className="brand-mark">
-        <FolderKanban size={24} />
-      </div>
+      <div className="auth-brand">
+  <div className="brand-mark">
+    <FolderKanban size={24} />
+  </div>
+
+  <div>
+    <h3>Project Management</h3>
+    <span>Organize projects efficiently</span>
+  </div>
+</div>
 
       <div className="auth-header">
-        <p className="eyebrow">PROJECT MANAGEMENT SYSTEM</p>
-        <h1>{isRegister ? 'Create Account' : 'Login'}</h1>
-      </div>
+  <p className="eyebrow">PROJECT MANAGEMENT SYSTEM</p>
+
+  <h1>
+    {isRegister ? 'Create Account' : 'Welcome Back'}
+  </h1>
+
+  <p className="auth-subtitle">
+    {isRegister
+      ? 'Create your workspace and start managing projects.'
+      : 'Sign in to continue managing your projects and tasks.'}
+  </p>
+</div>
 
       <form className="form-stack" onSubmit={submit}>
         {isRegister && (
@@ -219,6 +235,11 @@ function AuthPage({ mode, navigate, onAuth }) {
       </form>
 
       <p className="auth-switch">
+        <div className="auth-features">
+  <span>✓ Projects</span>
+  <span>✓ Tasks</span>
+  <span>✓ Dashboard</span>
+</div>
         {isRegister
           ? 'Already have an account?'
           : "Don't have an account?"}

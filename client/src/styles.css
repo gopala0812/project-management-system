@@ -110,19 +110,21 @@ h4 {
 
 .auth-card {
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
 
   background: white;
-
   border: 1px solid #e5e7eb;
 
-  border-radius: 16px;
+  border-radius: 20px;
 
-  padding: 40px;
+  padding: 48px;
 
   box-shadow:
-    0 20px 25px rgba(0, 0, 0, 0.08),
-    0 10px 10px rgba(0, 0, 0, 0.04);
+    0 30px 60px rgba(37,99,235,.12),
+    0 12px 24px rgba(0,0,0,.05);
 
   gap: 24px;
 }
@@ -690,4 +692,36 @@ h4 {
     min-width: 0;
     width: 100%;
   }
+}
+.auth-btn {
+  width: 100%;
+}
+.auth-subtitle {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.auth-brand h3 {
+  margin: 0;
+  color: #102033;
+}
+
+.auth-brand span {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+.auth-features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+
+  color: #64748b;
+  font-size: 0.85rem;
 }
