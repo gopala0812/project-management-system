@@ -1,0 +1,12 @@
+{
+  "name": "project-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack project and task management system with JWT authentication.",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "node scripts/dev.mjs",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client"
+  }
+}
