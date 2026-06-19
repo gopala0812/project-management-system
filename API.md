@@ -1,6 +1,11 @@
 # API Documentation
 
-Base URL: `http://localhost:4000/api`
+
+Development:
+`http://localhost:4000/api`
+
+Production:
+`https://project-management-system-6v3t.onrender.com/api`
 
 Use `Authorization: Bearer <token>` for all protected endpoints.
 
