@@ -104,7 +104,7 @@ Client:
 - API documentation: [API.md](./API.md)
 - Database schema and ER diagram: [DATABASE.md](./DATABASE.md)
 
-## Submission Placeholders
+## Links
 
-- GitHub Repository Link: add after pushing the repository
-- Deployment URL: add after deploying the frontend and API
+- Deployment URL: https://project-management-system-psi-one.vercel.app/
+
